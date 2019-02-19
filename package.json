@@ -1,0 +1,38 @@
+{
+  "name": "products",
+  "private": true,
+  "version": "0.0.0",
+  "description": "product api demo",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "faker": "^4.1.0",
+    "grunt": "1.0.1",
+    "sails": "^1.1.0",
+    "sails-hook-grunt": "^3.1.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^1.5.5",
+    "sails-postgresql": "^1.0.1",
+    "sails-hook-organics": "^0.13.0",
+    "sails-mongo": "1.0.1"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "scripts": {
+    "prestart": "npm run test",
+    "start": "NODE_ENV=production node app.js",
+    "lint": "eslint . --report-unused-disable-directives && echo '✔  Your .js files look good.'"
+  },
+  "main": "app.js",
+  "author": "Beatriz de Miguel",
+  "license": "",
+  "engines": {
+    "node": ">=8.9"
+  }
+}
